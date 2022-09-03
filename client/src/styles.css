@@ -4,13 +4,28 @@ body {
       rgba(0, 0, 0, 0.3), 
       rgba(0, 0, 0, 0.3)
     ),
-    url(https://i.pinimg.com/originals/8f/14/57/8f14578ef69a4c53352955d1e072eda6.png);
+    url(https://i.pinimg.com/564x/18/5e/b5/185eb58f4a4106b65d56c28cc0f94d0b.jpg);
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-size: cover;
+    justify-content: center;
 }
 
 * {
     margin: 0;
     padding: 0;
+    
+}
+.neonText {
+  font-size: 40px;
+  color: #fff;
+  text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #0fa,
+      0 0 82px #0fa,
+      0 0 92px #0fa,
+      0 0 102px #0fa,
+      0 0 151px #0fa;
 }
