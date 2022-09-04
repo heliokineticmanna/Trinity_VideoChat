@@ -38,6 +38,8 @@ const Calling = () => {
   return (
     <div className={classes.wrapper}>
       <div className="neonText">Trinity App</div>
+      <br></br>
+      <div className="helptext"> If Your Webcam is not visible, please refresh the page</div>
       {/* <AppBar className={classes.appBar} position="static" color="yellow">
         <Typography variant="h2" align="center"></Typography>
       </AppBar> */}
