@@ -16,6 +16,11 @@ const Notifications = () => {
           </Button>
         </div>
       )}
+      {callAccepted && (
+        <div style={{ display: 'flex', justifyContent: 'space-around' }}>
+        <h1>Connected!</h1>
+      </div>
+      )}
     </>
   );
 };
