@@ -9,7 +9,7 @@ const io = require("socket.io")(server, {
 	}
 });
 
-app.use(cors());
+app.use(cors());;;
 
 const PORT = process.env.PORT || 5000;
 
