@@ -1,5 +1,5 @@
 import React from 'react';
-// import { Typography, AppBar } from '@material-ui/core';
+
 import { makeStyles } from '@material-ui/core/styles';
 
 import VideoPlayer from './components/VideoPlayer';
@@ -40,9 +40,7 @@ const Calling = () => {
       <div className="neonText">Trinity App</div>
       <br></br>
       <div className="helptext"> If Your Webcam is not visible, please refresh the page</div>
-      {/* <AppBar className={classes.appBar} position="static" color="yellow">
-        <Typography variant="h2" align="center"></Typography>
-      </AppBar> */}
+      
       <VideoPlayer />
       <Sidebar>
         <Notifications />
