@@ -2,6 +2,7 @@ import React from 'react'
 import './Home.css'
 import Typewriter from "typewriter-effect";
 import { Link } from 'react-router-dom';
+import { signInWithGoogle } from "./firebasehelp";
 
 
 const Home = () => {
@@ -30,18 +31,26 @@ const Home = () => {
       <tr><td><form className='form'>
   <div className="form-group">
     <label htmlFor="exampleInputEmail1"><strong>Email address</strong></label>
-    <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"/>
+    <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" important/>
     
   </div>
   <div className="form-group">
     <label htmlFor="exampleInputPassword1"><strong>Password</strong></label>
-    <input type="password" className="form-control" id="exampleInputPassword1" placeholder="Password"/>
+    <input type="password" className="form-control" id="exampleInputPassword1" placeholder="Password" important/>
   </div>
   <div className="form-group form-check">
     <input type="checkbox" className="form-check-input" id="exampleCheck1"/>
     <label className="form-check-label" htmlFor="exampleCheck1"><strong>Remember Me</strong></label>
   </div>
   <Link to="/Call"><button type="submit" className="btn btn-primary">Log in</button></Link>
+  <div className="App">
+      <button class="login-with-google-btn" onClick={signInWithGoogle}>
+        Sign in with Google
+      </button>
+      {/* <h1>{localStorage.getItem("name")}</h1>
+      <h1>{localStorage.getItem("email")}</h1>
+      <img src={localStorage.getItem("profilePic")} /> */}
+    </div>
 </form></td></tr>
     
     
